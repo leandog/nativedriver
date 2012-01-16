@@ -48,7 +48,7 @@ public class AndroidWait implements Wait<Void> {
    * 1 second for timeout.
    */
   public AndroidWait() {
-    this(new AndroidProcessClock(), DEFAULT_SLEEP_INTERVAL, DEFAULT_TIMEOUT);
+    this(new AndroidSystemClock(), DEFAULT_SLEEP_INTERVAL, DEFAULT_TIMEOUT);
   }
 
   /**
